@@ -1,0 +1,25 @@
+1. false
+   false
+
+2. 'hey'
+   'hey'
+   'oops'
+
+3. 1
+   4
+   3
+   2
+
+4. true
+   true
+   true
+   return true //should have been false - objects are different
+
+5. return "this person is cool"
+
+6. you haven't added your files before committing them so Git hasn't added them to the staging area (? is that what it's called?).
+   You need to do the command git add text-file.txt
+
+7. You're already listening to that port and its already in use so you need to quit the server with ctrl+C //just already listening
+
+8. change the content type to "text/html"

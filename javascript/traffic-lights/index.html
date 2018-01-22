@@ -1,0 +1,62 @@
+<!--
+  Traffic Light Plan
+
+  HTML
+
+  1. We have an outer container -> div
+
+  2. Inner lights are going to be divs aswell
+
+    2.1. A red, amber and a green light
+
+  3. We need a button underneath with Click Me in
+
+  CSS
+
+  1. Lights are three different colours, all same size and shape (implies a class - let's call it traffic-light)
+
+    1.1. We can have them all start transparent to make it easier
+
+  2. Tackle different colours with IDs
+
+  3. Container needs rounded corners and a background colour of black. There's padding too
+
+  4. CSS is used to change the colours even though JS faciliates that change
+
+  5. Class active so it sets the opacity to 1
+
+  JS
+
+  1. We need a function that on-click changes the class to active
+
+  2. Need to track which light is the current light
+
+    2.1. We need a variable to track the count
+    2.2. list of lights ['red','yellow', 'green']
+
+  3. Cycle through them
+
+    3.1. modulus function make the cycle between 0 and 2
+
+  4. We need to toggle (on/off) the active class. (If the class is on we need it off etc)
+
+    4.1. Select the element we want and add or remove the class
+
+-->
+
+<!doctype html>
+<html>
+<head>
+  <tile>Traffic Lights</tile>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="traffic-light red active" ></div>
+    <div class="traffic-light orange" ></div>
+    <div class="traffic-light green" ></div>
+  </div>
+  <button id="change" onclick="changeColor()">Change</button>
+  <script src="index.js"></script>
+</body>
+</html>

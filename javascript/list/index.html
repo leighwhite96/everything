@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+      h1 {
+        color: purple;
+      }
+    </style>
+</head>
+<body>
+  <input id="userinput" type="text" value="" />
+  <button id="press" onclick="list()">Press Me</button>
+  <h1>My List x3</h1>
+  <ol id="list">
+
+  </ol>
+
+
+
+
+  <script>
+    function list() {
+      // if (userinput === "") {
+      //   console.warn("nothing was entered")
+      // } else {
+      var item = document.getElementById("userinput").value;
+      var li = "<li>" + item + "</li> <li>" + item + "</li> <li>" + item + "</li>"
+      document.getElementById("list").innerHTML = li;
+      }
+
+  </script>
+</body>
+</html>

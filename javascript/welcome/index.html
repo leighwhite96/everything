@@ -1,0 +1,29 @@
+ <!doctype html>
+ <html>
+<head>
+  <style>
+    h1 {
+      color: purple;
+    }
+    #btn {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+  Enter your name: <input id="name" type="text" value="" >
+  <button id="btn" onclick="welcome()">Press to Enter</button>
+  <h1 id ="welcome">Welcome </h1>
+  <script>
+    function welcome() {
+      var x = document.getElementById("name").value;
+      var y = x.toLowerCase().trim();
+      if (y == "scott") {
+        document.getElementById("welcome").innerHTML = "Go away, " + x + ". ";
+      } else {
+      document.getElementById("welcome").innerHTML = "Welcome " + x + ". Have a nice day :)";
+    }
+  }
+  </script>
+</body>
+</html>

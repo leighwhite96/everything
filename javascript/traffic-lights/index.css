@@ -1,0 +1,32 @@
+
+/* since we're just stacking in a div it doesn't need a height */
+
+.container {
+  background-color: black;
+  border-radius: 10px;
+  width: 30px;
+  padding: 5px;
+}
+
+.traffic-light {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.active {
+  opacity: 1;
+}

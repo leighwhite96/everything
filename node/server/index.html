@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+
+
+  </head> 
+  <body>
+    <h1>Hello</h1>
+    <button onclick="makeRequest()"/>Click Me</button>
+    <div id="content">
+
+    </div>
+    <script>
+
+      alert("Pay\n attention");
+
+      function displayImage(img) {
+        document.getElementById("content").innerHTML = img;
+      }
+      function makeRequest() {
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {     //when we recieve something
+        if (request.readyState === 4) {
+          console.log(request.responseText);
+          displayImage(request.responseText);         //whatever you send back from the server
+          };
+        };
+        request.open("GET", "/cat", true);
+        request.send();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+a { 
+	font-family: Pacifico;
+	font-size: 100px;
+	border: 10px solid blue;
+	padding: 30px;
+	border-style: dotted;
+	position: relative;
+	top: 40px;
+	border-radius: 30px;
+	background-color: light blue;
+}
+
+a:hover {
+	color: purple;
+	border-color: purple;
+	cursor: wait;
+}
+
+a:active {
+	background-color: #d7e3f7;
+}

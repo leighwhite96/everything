@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    h1 {
+      color: pink;
+    }
+
+    #height {
+      width: 40px;
+    }
+
+    #submit {
+      background-color: pink;
+    }
+
+    fieldset {
+      border-style: dotted;
+      padding: 10px;
+      border-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="post" action="/">
+    <fieldset>
+      <legend>
+        <h1>Pets</h1></legend>
+      <label for="pet-owner">Name of owner: </label><input name="pet-owner" type="text" placeholder="Enter owner's name" /><br /><br /> <label for="pet-name">Name of pet: </label><input name="pet-name" type="text" placeholder="Enter pet's name" /><br /><br /> <label for="height">Height (cm):</label><input name="height" id="height" type="text"
+        placeholder="cm" /><br /><br /> Weight (st lbs):
+      <select name="stone">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select> stone
+      <select name="lbs">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        </select> 1bs <br /><br /> Gender:
+      <br /><br />
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br><br />
+      <input id="submit" type="submit" value="Submit" />
+    </fieldset>
+  </form>
+</body>
+
+</html>

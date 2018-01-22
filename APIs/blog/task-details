@@ -1,0 +1,40 @@
+//create a blog that allows CRUD operations on posts -CREATE READ UPDATE DELETE
+//we need a schema for posts - id, author, date, title, content etc
+//we need to do this through an API
+//for each operation we should have a different route
+//GET - get info or certain post from the server
+//POST - create new content
+//DELETE - deletes post
+//PUT - updating the object that exists but with a new object
+//PATCH - I expect it to exist, I want overwrite one part of it. Patching part of that object. FOR THIS PROJ- ONE PROPERTY
+//form is the best for UX - give them an interface
+//look up form methods
+//min - create - read - delete - leave update until last
+//get express and api routes up and working ... then tie to a database
+//create new database in mongo, schema in mongoose, maybe a test post: hello I'm the admin etc
+//API first then forms
+//DB blog with collections post
+//
+Cat.find({id: 1}, function(error,docs) {
+  if(docs.length == 0) {
+    var kitty = new Cat({});
+    kitty.ssave(function(err,doc){
+      res.send(doc);
+    })
+  }
+})
+
+Cat.find({id: 1}, function(error,docs) {
+  if(!doc) {
+    return res.send("Nothing exists"); }
+
+    doc.name = 'Cat';
+    doc.save(...)
+
+  }
+
+})
+
+//if you wanna update something you need to check its there first otherwise it won't work
+
+//mongoose has lots of help on the website

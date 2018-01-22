@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div id="basic-waypoint">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script>
+    var waypoint = new Waypoint({
+      element: document.getElementById('basic-waypoint'),
+      handler: function() {
+        alert('Basic waypoint triggered');
+      }
+      })
+    </script>
+  </body>
+</html>

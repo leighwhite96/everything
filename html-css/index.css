@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+html {
+	background-color: #d0def4;
+}
+
+.heading {
+	font-family: Amatic SC;
+	text-align: center;
+}
+	
+h1 {
+	background-color: yellow;
+	color: pink;
+}
+
+h1:hover {
+	background-color: red;
+	text-align: center;
+}
+h2 {
+	color: green;
+} 
+/* h5 {
+	position: absolute;
+	left: 50px;
+	top: 100px;
+} */
+
+p {
+	font-family: Amatic SC;
+	font-size: 100px;
+	font-style: italic;
+	text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	position: relative;
+	top: 40px;
+}
+
+td, th {
+    border: 5px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #f4d0e5;
+}
+
+a {
+	color: blue;
+	position: relative;
+	bottom: 70px;
+	left: 150px;
+} 
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: pink;
+	font-size: 20px;
+}
+img.center {
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div {
+	width: 500px;
+	border: 25px solid purple;
+	padding: 30px;
+	border-style: dotted;
+	position: relative;
+	left: 50px;
+	
+}
+
+#list {
+	width: 500px;
+	border: 10px solid pink;
+	padding: 10px;
+	border-style: dotted;
+	margin-top: 20px;
+}
